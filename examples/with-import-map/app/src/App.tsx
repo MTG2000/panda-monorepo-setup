@@ -12,7 +12,7 @@ function App() {
           fontSize: '4xl', 
           lineHeight: '1.1', 
           border: `1px solid ${token('colors.amber.300')}`, // This doesn't work
-          // border: `1px solid token(colors.amber.500)` // This works
+          // border: `1px solid {colors.red.500}` // This works
        })}>Hello from Panda 🐼</h1>
       <h2 className={css({ fontSize: '2xl', my: 4, color: 'yellow.400' })}>module-resolution/with-import-map</h2>
       <Stack>
@@ -25,6 +25,5 @@ function App() {
       </Stack>
     </>
   )
-}
-
+} 
 export default App

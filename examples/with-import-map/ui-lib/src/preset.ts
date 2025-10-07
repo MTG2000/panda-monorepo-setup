@@ -28,11 +28,22 @@ const buttonRecipe = defineRecipe({
 })
 
 export const preset = definePreset({
+  name: 'ui-lib',
   theme: {
     recipes: {
       button: buttonRecipe,
     },
+    extend:{
+      tokens:{
+        colors: {
+          primary: {
+            value: '#ff0000'
+          }
+        }
+      }
+    }
   },
+  
 })
 
 export default preset
