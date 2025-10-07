@@ -182,8 +182,6 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
 
-  examples/with-import-map-package/ui-lib/styled-system: {}
-
   examples/with-import-map/app:
     dependencies:
       panda-mono-with-import-map-ui-lib:
@@ -257,8 +255,6 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
-
-  examples/with-import-map/ui-lib/styled-system: {}
 
   examples/with-preset/app:
     dependencies:
@@ -1331,13 +1327,7 @@ packages:
 
   /@swc/core@1.5.7:
     resolution: {integrity: sha512-U4qJRBefIJNJDRCCiVtkfa/hpiZ7w0R6kASea+/KLp+vkus3zcLSB8Ub8SvKgTIxjWpwsKcZlPf5nrv4ls46SQ==}
-    engines: {node: '>=10'}
     requiresBuild: true
-    peerDependencies:
-      '@swc/helpers': ^0.5.0
-    peerDependenciesMeta:
-      '@swc/helpers':
-        optional: true
     dependencies:
       '@swc/counter': 0.1.3
       '@swc/types': 0.1.7
@@ -1548,8 +1538,6 @@ packages:
     dependencies:
       '@swc/core': 1.5.7
       vite: 4.4.5
-    transitivePeerDependencies:
-      - '@swc/helpers'
     dev: true
 
   /@vue/compiler-core@3.4.19:
@@ -2511,6 +2499,8 @@ packages:
       lightningcss-linux-x64-musl: 1.23.0
       lightningcss-win32-x64-msvc: 1.23.0
     dev: true
+    bundledDependencies:
+      - napi-wasm
 
   /lilconfig@2.1.0:
     resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
